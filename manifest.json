@@ -8,6 +8,10 @@
     "permissions": [
         "contextMenus"
     ],
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["content_script.js"]
+    }],
     "icons": {
         "16": "assets/cs_16.png",
         "48": "assets/cs_48.png",
